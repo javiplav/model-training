@@ -8,5 +8,7 @@ wget -nc https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
 wait
 echo "Download complete!"
 tar zxf cifar-10-python.tar.gz
+wait
 rm cifar-10-python.tar.gzc
+wait
 python main.py
