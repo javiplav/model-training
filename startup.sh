@@ -11,4 +11,4 @@ tar zxf cifar-10-python.tar.gz
 wait
 rm cifar-10-python.tar.gzc
 wait
-python main.py
+python /workspace/model-training.git/main.py
