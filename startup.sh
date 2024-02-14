@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "Downloading CIFAR10 dataset"
-sudo apt-get install wget
+apt-get install wget
 wait
 if ! command -v wget &> /dev/null; then
   echo "Error: wget not found. Please install it."
