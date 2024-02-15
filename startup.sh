@@ -6,7 +6,7 @@ wait $!
 # Next commands using wget will run here
 echo "wget installation complete!"
 wget -nc https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
-wait
+wait $!
 echo "Download complete!"
 tar zxf cifar-10-python.tar.gz
 wait $!
