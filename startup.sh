@@ -1,4 +1,5 @@
 #!/bin/sh
+echo "Usage: $0 <repository_url> <commit_id>"
 echo "Downloading CIFAR10 dataset"
 apt-get update > /dev/null 2>&1 && apt-get install wget -y > /dev/null 2>&1 && apt-get install git -y > /dev/null 2>&1
 wait $!
@@ -11,6 +12,9 @@ tar zxf cifar-10-python.tar.gz
 wait $!
 rm cifar-10-python.tar.gz
 wait $!
+repository_url="$1"
+commit_id="$2"
 git clone --branch "$commit_id" "$repository_url"
 wait $!
+echo "Successfully cloned repository to ./$repository_name at commit $commit_id"
 python /workspace/model-training.git/main.py
