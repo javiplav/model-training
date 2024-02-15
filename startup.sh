@@ -24,5 +24,5 @@ rm cifar-10-python.tar.gz
 wait $!
 git clone --branch "$commit_id" "$repository_url"
 wait $!
-echo "Successfully cloned repository to ./$repository_name at commit $commit_id"
+echo "Successfully cloned repository $repository_url at commit $commit_id"
 python /workspace/model-training.git/main.py
