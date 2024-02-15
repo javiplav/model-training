@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "Usage: $0 <repository_url> <commit_id>"
+echo "Usage: $0 $1 $2"
 echo "Downloading CIFAR10 dataset"
 apt-get update > /dev/null 2>&1 && apt-get install wget -y > /dev/null 2>&1 && apt-get install git -y > /dev/null 2>&1
 wait $!
