@@ -11,6 +11,6 @@ tar zxf cifar-10-python.tar.gz
 wait $!
 rm cifar-10-python.tar.gz
 wait $!
-git clone --branch main https://github.com/javiplav/model-training.git
+git clone --branch "$commit_id" "$repository_url"
 wait $!
 python /workspace/model-training.git/main.py
